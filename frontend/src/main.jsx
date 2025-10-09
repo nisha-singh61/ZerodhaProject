@@ -1,11 +1,17 @@
-import { StrictMode } from 'react'
-import { createRoot } from 'react-dom/client'
-import './index.css'
+import React from 'react';
+import ReactDOM from 'react-dom/client';
+import { BrowserRouter, Routes, Route } from 'react-router-dom';
+import './index.css';
+import HomePage from './landing_page/home/HomePage';
 
-createRoot(document.getElementById('root')).render(
-  <StrictMode>
-   <div>
-    <h1>Hello</h1>
-   </div>
-  </StrictMode>,
-)
+
+import 'bootstrap/dist/css/bootstrap.min.css';
+
+const root = ReactDOM.createRoot(document.getElementById('root'));
+root.render(
+  <BrowserRouter>
+  <Routes>
+    <Route path='/' element={<HomePage/>} />
+  </Routes>
+  </BrowserRouter>
+);
