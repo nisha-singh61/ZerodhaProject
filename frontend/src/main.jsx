@@ -7,9 +7,12 @@ import HomePage from './landing_page/home/HomePage';
 
 import 'bootstrap/dist/css/bootstrap.min.css';
 
+import Navbar from './landing_page/Navbar';
+
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <BrowserRouter>
+  <Navbar />
   <Routes>
     <Route path='/' element={<HomePage/>} />
   </Routes>
