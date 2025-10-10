@@ -11,3 +11,25 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
+
+.custom-links a {
+  color: #3d77cd;
+  text-decoration: none;
+  font-weight: 500; /* medium boldness */
+}
+
+.custom-links a:hover {
+  color: #353434; /* dark black on hover */
+}
+
+button.btn {
+  background-color: #3d77cd;
+  color: #fff;
+  border: none;
+  border-radius: 3px;
+}
+
+button.btn:hover {
+  background-color: #424141; /* black on hover */
+  color: #fff;
+}
