@@ -8,6 +8,7 @@ import HomePage from './landing_page/home/HomePage';
 import 'bootstrap/dist/css/bootstrap.min.css';
 
 import Navbar from './landing_page/Navbar';
+import Footer from './landing_page/Footer';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
@@ -16,5 +17,6 @@ root.render(
   <Routes>
     <Route path='/' element={<HomePage/>} />
   </Routes>
+  <Footer />
   </BrowserRouter>
 );

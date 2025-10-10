@@ -50,3 +50,35 @@ button.btn:hover {
   background-color: #424141; /* black on hover */
   color: #fff;
 }
+
+.footer-icons i {
+  color: #6c757d; /* muted gray initially */
+  transition: color 0.3s; /* smooth color change */
+  cursor: pointer; /* optional: show pointer on hover */
+}
+
+.footer-icons i:hover {
+  color: #3d77cd; /* bootstrap primary blue on hover */
+}
+
+/* index.css - make sure this file is imported AFTER bootstrap css */
+footer .footer-links a {
+  display: inline-block;   /* or 'block' if you want full-width links */
+  margin-bottom: 10px;      /* vertical space between links */
+  color: #6c757d !important;
+  text-decoration: none !important;
+}
+footer .footer-links a:hover {
+  color: #3d77cd !important;
+}
+
+.down-links {
+  text-decoration: none;   /* removes underline */
+  color: #909ca7;          /* optional: muted grey like Bootstrap */
+  margin-right: 15px;      /* space between links */
+  font-weight: 500;
+}
+
+.down-links:hover {
+  color: #3d77cd;          /* Bootstrap primary blue on hover */
+}
