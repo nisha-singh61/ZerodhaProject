@@ -12,6 +12,7 @@ code {
     monospace;
 }
 
+/* Navbar */
 .navbar-nav .nav-link {
   font-weight: 500; /* semi-bold */
   color: #7f7d7d !important; 
@@ -29,6 +30,7 @@ code {
   color: #3d77cd !important;
 }
 
+/* Custom Links */
 .custom-links a {
   color: #3d77cd;
   text-decoration: none;
@@ -51,6 +53,7 @@ button.btn:hover {
   color: #fff;
 }
 
+/* Footer */
 .footer-icons i {
   color: #6c757d; /* muted gray initially */
   transition: color 0.3s; /* smooth color change */
@@ -83,7 +86,7 @@ footer .footer-links a:hover {
   color: #3d77cd;          /* Bootstrap primary blue on hover */
 }
 
-
+/* About */
 .about-section p a {
   text-decoration: none;   /* remove underline */
   color: #3d77cd;          /* Bootstrap blue */
@@ -108,4 +111,79 @@ footer .footer-links a:hover {
 
 .team-section p {
   margin-left: -90px;   /* move text slightly left */
+}
+
+/* Product */
+.hero-title {
+  color: #454444;
+  font-size: 30px;
+}
+
+.hero-subtitle {
+  color: #454444;
+  font-weight: 400; /* slightly thin */
+  font-size: 22px;
+}
+
+.custom-container {
+  padding-left: 100px;
+  padding-right: 100px;
+}
+
+.zoom-hover {
+  transition: transform 0.4s ease; /* smooth zoom */
+  cursor: pointer;
+}
+
+.zoom-hover:hover {
+  transform: scale(1.05); /* slight zoom */
+}
+
+.product-title {
+  font-size: 1.75rem; /* adjust as needed */
+  font-weight: 600;
+  color: #454444;
+}
+
+.universe-title {
+  color: #454444;
+  font-size: 25px;
+}
+
+.store-badge {
+  transition: all 0.3s ease;
+}
+
+.store-badge:hover {
+  filter: brightness(1.2) opacity(0.85);
+  /* transform: scale(1.05); optional zoom */
+}
+
+.universe-intro {
+  font-size: 1rem !important; /* override container */
+  line-height: 1.5 !important;
+  max-width: 800px; /* optional, to keep it shorter */
+  margin: 0 auto 2rem auto;
+  color:#696767 !important;
+}
+
+/* All paragraphs inside Universe */
+.universe-container p {
+  font-weight: 500;        /* bold */
+  color: #9ca3a9;          /* same as Bootstrap text-muted */
+  font-size: 0.8rem;       /* similar to Bootstrap small */
+  line-height: 1.6;        /* better readability */
+  margin-top: 0.5rem;      /* spacing */
+  margin-bottom: 0;        /* remove extra bottom space */
+}
+
+/* Target all images inside Universe */
+.universe-container img {
+  transition: all 0.3s ease; /* smooth effect */
+  cursor: pointer;           /* pointer cursor */
+}
+
+.universe-container img:hover {
+  filter: brightness(1.2) opacity(0.85); /* lighter flash effect */
+  /* transform: scale(1.05);                slight zoom */
 }
