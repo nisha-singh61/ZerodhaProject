@@ -13,15 +13,15 @@ function Footer() {
                 reserved.
               </p>
               <div className="d-flex gap-4 mb-3 footer-icons" style={{fontSize: "20px"}}>
-                <i class="fa-brands fa-x-twitter"></i>
-                <i class="fa-brands fa-square-facebook"></i>
-                <i class="fa-brands fa-instagram"></i>
-                <i class="fa-brands fa-linkedin-in"></i>
+                <i className="fa-brands fa-x-twitter"></i>
+                <i className="fa-brands fa-square-facebook"></i>
+                <i className="fa-brands fa-instagram"></i>
+                <i className="fa-brands fa-linkedin-in"></i>
               </div>
               <div className="border-top d-flex gap-4 pt-3 footer-icons" style={{fontSize: "20px"}}>
-                <i class="fa-brands fa-youtube"></i>
-                <i class="fa-brands fa-whatsapp"></i>
-                <i class="fa-brands fa-telegram"></i>
+                <i className="fa-brands fa-youtube"></i>
+                <i className="fa-brands fa-whatsapp"></i>
+                <i className="fa-brands fa-telegram"></i>
               </div>
             </div>
             <div className="col footer-links text-muted">

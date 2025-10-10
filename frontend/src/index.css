@@ -82,3 +82,30 @@ footer .footer-links a:hover {
 .down-links:hover {
   color: #3d77cd;          /* Bootstrap primary blue on hover */
 }
+
+
+.about-section p a {
+  text-decoration: none;   /* remove underline */
+  color: #3d77cd;          /* Bootstrap blue */
+  font-weight: 500;        /* slightly bold */
+}
+
+.about-section p a:hover {
+  text-decoration: none;   /* no underline on hover */
+  color: #6c757d;          /* muted gray on hover */
+}
+
+/* Optional: control spacing specifically for this section */
+.about-section {
+  max-width: 1140px;
+  margin: 0 auto;          /* centers horizontally */
+}
+
+.about-section h5 {
+  color: #333333;     /* dark gray */
+  font-weight: 400;   /* thin text */
+}
+
+.team-section p {
+  margin-left: -90px;   /* move text slightly left */
+}
