@@ -187,3 +187,64 @@ footer .footer-links a:hover {
   filter: brightness(1.2) opacity(0.85); /* lighter flash effect */
   /* transform: scale(1.05);                slight zoom */
 }
+
+/* Pricing */
+.pricing-title {
+  color: #454444;
+  font-size: 30px;
+}
+
+.pricing-subtitle {
+  color: #9ca3a9; 
+  font-weight: 400; /* slightly thin */
+  font-size: 22px;
+}
+
+.pricing-img {
+  max-height: 190px;
+  width: auto;  /* keeps aspect ratio */
+  display: block;
+  margin: 0 auto; /* centers the image */
+  margin-bottom: 1rem;
+}
+
+.price-container h1 {
+  color: #454444;
+  font-size: 1.8rem;   /* same as fs-3 */
+  margin-bottom: 1.5rem; /* little margin bottom */
+}
+
+.price-container p {
+  color:#7b7777;
+  line-height: 1.7;    /* better readability */
+  font-size: 1.05rem;  /* slightly bigger text */
+  font-weight: 500;
+}
+
+/* support */
+.support-container {
+  padding-left: 4px !important;   /* or 0 if you want no gap */
+  padding-right: 4px !important;
+}
+
+.accordion-item-custom {
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.accordion-item-custom:hover {
+  transform: scale(1.03); /* zoom in */
+  box-shadow: 0 6px 14px rgba(0, 0, 0, 0.15);
+}
+
+.notice-box {
+  background: #fff8f0; /* same background */
+  border-left: 6px solid orange; /* orange bar */
+}
+.notice-box a {
+  color: #3d77cd;
+  text-decoration: underline;
+  font-weight: 500;
+}
+.notice-box a:hover {
+  color: #827f7f;
+}
