@@ -11,7 +11,7 @@ function Navbar() {
         <NavLink className="navbar-brand" to="/">
           <img
             src="media/images/logo.svg"
-            style={{ width: "23%" }}
+            style={{ width: "130px", height:"auto" }}
             alt="Logo"
           />
         </NavLink>
@@ -54,8 +54,8 @@ function Navbar() {
               </NavLink>
             </li>
           </ul>
-          <div className="text-2xl mt-2 mx-4">
-            <i className="fa-solid fa-bars" style={{ fontSize: "22px" }}></i>
+          <div className="d-none d-lg-block text-2xl mt-2 mx-4">
+            <i className="fa-solid fa-bars" style={{ fontSize: "22px", cursor: "pointer" }}></i>
           </div>
         </div>
       </div>

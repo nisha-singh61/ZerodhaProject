@@ -248,3 +248,32 @@ footer .footer-links a:hover {
 .notice-box a:hover {
   color: #827f7f;
 }
+
+@media (max-width: 991px) {
+  .nav-link {
+    margin-left: 0;
+    padding: 10px 0;
+    text-align: center;
+  }
+}
+
+.navbar-nav .nav-link {
+  position: relative;
+  transition: color 0.3s ease;
+}
+
+.navbar-nav .nav-link::after {
+  content: "";
+  position: absolute;
+  bottom: -3px;
+  left: 0;
+  width: 0%;
+  height: 2px;
+  background-color: #3d77cd;
+  transition: width 0.3s ease;
+}
+
+.navbar-nav .nav-link:hover::after,
+.navbar-nav .nav-link.active::after {
+  width: 100%;
+}
