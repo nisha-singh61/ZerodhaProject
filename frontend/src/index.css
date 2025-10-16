@@ -482,3 +482,65 @@ footer .footer-links a:hover {
     margin: 0 auto;
   }
 }
+
+/* About section responsive */
+/* About section layout */
+.about-content {
+  max-width: 1140px;
+  margin: 0 auto;
+  line-height: 1.8;
+  font-size: 1.05rem;
+}
+
+.about-content p {
+  margin-bottom: 1rem;
+}
+
+/* Mobile adjustments */
+@media (max-width: 768px) {
+  .about-content {
+    line-height: 1.6;
+    font-size: 0.95rem;
+  }
+
+  .about-content h1 {
+    font-size: 1.2rem;
+    text-align: center;
+  }
+
+  .about-content p,
+  .about-content a {
+    text-align: center;
+  }
+
+  .about-content .col-md-6 {
+    padding-left: 0;
+    padding-right: 0;
+  }
+}
+
+/* Team Responsiveness */
+/* Team Section */
+.team-section .team-img {
+  width: 56%;
+  max-width: 200px; /* prevents image from being too large on large screens */
+  border-radius: 50%;
+  margin: 0 auto;
+  display: block;
+}
+
+/* Mobile adjustments */
+@media (max-width: 768px) {
+  .team-section p {
+    margin-left: 0;  /* reset margin for mobile */
+    text-align: center; /* center text */
+  }
+
+  .team-section .team-info {
+    text-align: center !important;
+  }
+
+  .team-section .team-img {
+    width: 70%;
+  }
+}
