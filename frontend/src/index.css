@@ -34,11 +34,11 @@ code {
 .custom-links a {
   color: #3d77cd;
   text-decoration: none;
-  font-weight: 500; /* medium boldness */
+  font-weight: 500;
 }
 
 .custom-links a:hover {
-  color: #353434; /* dark black on hover */
+  color: #353434; 
 }
 
 button.btn {
@@ -49,25 +49,24 @@ button.btn {
 }
 
 button.btn:hover {
-  background-color: #424141; /* black on hover */
+  background-color: #424141;
   color: #fff;
 }
 
 /* Footer */
 .footer-icons i {
-  color: #6c757d; /* muted gray initially */
-  transition: color 0.3s; /* smooth color change */
-  cursor: pointer; /* optional: show pointer on hover */
+  color: #6c757d;
+  transition: color 0.3s;
+  cursor: pointer;
 }
 
 .footer-icons i:hover {
-  color: #3d77cd; /* bootstrap primary blue on hover */
+  color: #3d77cd;
 }
 
-/* index.css - make sure this file is imported AFTER bootstrap css */
 footer .footer-links a {
-  display: inline-block;   /* or 'block' if you want full-width links */
-  margin-bottom: 10px;      /* vertical space between links */
+  display: inline-block; 
+  margin-bottom: 10px;
   color: #6c757d !important;
   text-decoration: none !important;
 }
@@ -76,41 +75,41 @@ footer .footer-links a:hover {
 }
 
 .down-links {
-  text-decoration: none;   /* removes underline */
-  color: #909ca7;          /* optional: muted grey like Bootstrap */
-  margin-right: 15px;      /* space between links */
+  text-decoration: none;
+  color: #909ca7;
+  margin-right: 15px;
   font-weight: 500;
 }
 
 .down-links:hover {
-  color: #3d77cd;          /* Bootstrap primary blue on hover */
+  color: #3d77cd;
 }
 
 /* About */
 .about-section p a {
-  text-decoration: none;   /* remove underline */
-  color: #3d77cd;          /* Bootstrap blue */
-  font-weight: 500;        /* slightly bold */
+  text-decoration: none;
+  color: #3d77cd;
+  font-weight: 500;
 }
 
 .about-section p a:hover {
-  text-decoration: none;   /* no underline on hover */
-  color: #6c757d;          /* muted gray on hover */
+  text-decoration: none;
+  color: #6c757d;
 }
 
-/* Optional: control spacing specifically for this section */
+/*control spacing specifically for this section */
 .about-section {
   max-width: 1140px;
   margin: 0 auto;          /* centers horizontally */
 }
 
 .about-section h5 {
-  color: #333333;     /* dark gray */
-  font-weight: 400;   /* thin text */
+  color: #333333;
+  font-weight: 400;
 }
 
 .team-section p {
-  margin-left: -90px;   /* move text slightly left */
+  margin-left: -90px;
 }
 
 /* Product */
@@ -121,7 +120,7 @@ footer .footer-links a:hover {
 
 .hero-subtitle {
   color: #454444;
-  font-weight: 400; /* slightly thin */
+  font-weight: 400;
   font-size: 22px;
 }
 
@@ -131,16 +130,16 @@ footer .footer-links a:hover {
 }
 
 .zoom-hover {
-  transition: transform 0.4s ease; /* smooth zoom */
+  transition: transform 0.4s ease;
   cursor: pointer;
 }
 
 .zoom-hover:hover {
-  transform: scale(1.05); /* slight zoom */
+  transform: scale(1.05);
 }
 
 .product-title {
-  font-size: 1.75rem; /* adjust as needed */
+  font-size: 1.75rem;
   font-weight: 600;
   color: #454444;
 }
@@ -156,36 +155,34 @@ footer .footer-links a:hover {
 
 .store-badge:hover {
   filter: brightness(1.2) opacity(0.85);
-  /* transform: scale(1.05); optional zoom */
 }
 
 .universe-intro {
-  font-size: 1rem !important; /* override container */
+  font-size: 1rem !important;
   line-height: 1.5 !important;
-  max-width: 800px; /* optional, to keep it shorter */
+  max-width: 800px;
   margin: 0 auto 2rem auto;
   color:#696767 !important;
 }
 
 /* All paragraphs inside Universe */
 .universe-container p {
-  font-weight: 500;        /* bold */
-  color: #9ca3a9;          /* same as Bootstrap text-muted */
-  font-size: 0.8rem;       /* similar to Bootstrap small */
-  line-height: 1.6;        /* better readability */
-  margin-top: 0.5rem;      /* spacing */
-  margin-bottom: 0;        /* remove extra bottom space */
+  font-weight: 500;
+  color: #9ca3a9;
+  font-size: 0.8rem;
+  line-height: 1.6;
+  margin-top: 0.5rem; 
+  margin-bottom: 0;
 }
 
 /* Target all images inside Universe */
 .universe-container img {
-  transition: all 0.3s ease; /* smooth effect */
-  cursor: pointer;           /* pointer cursor */
+  transition: all 0.3s ease;
+  cursor: pointer;
 }
 
 .universe-container img:hover {
-  filter: brightness(1.2) opacity(0.85); /* lighter flash effect */
-  /* transform: scale(1.05);                slight zoom */
+  filter: brightness(1.2) opacity(0.85);
 }
 
 /* Pricing */
@@ -196,34 +193,34 @@ footer .footer-links a:hover {
 
 .pricing-subtitle {
   color: #9ca3a9; 
-  font-weight: 400; /* slightly thin */
+  font-weight: 400;
   font-size: 22px;
 }
 
 .pricing-img {
   max-height: 190px;
-  width: auto;  /* keeps aspect ratio */
+  width: auto;
   display: block;
-  margin: 0 auto; /* centers the image */
+  margin: 0 auto;
   margin-bottom: 1rem;
 }
 
 .price-container h1 {
   color: #454444;
   font-size: 1.8rem;   /* same as fs-3 */
-  margin-bottom: 1.5rem; /* little margin bottom */
+  margin-bottom: 1.5rem;
 }
 
 .price-container p {
   color:#7b7777;
-  line-height: 1.7;    /* better readability */
-  font-size: 1.05rem;  /* slightly bigger text */
+  line-height: 1.7;
+  font-size: 1.05rem;
   font-weight: 500;
 }
 
 /* support */
 .support-container {
-  padding-left: 4px !important;   /* or 0 if you want no gap */
+  padding-left: 4px !important;
   padding-right: 4px !important;
 }
 
@@ -232,13 +229,13 @@ footer .footer-links a:hover {
 }
 
 .accordion-item-custom:hover {
-  transform: scale(1.03); /* zoom in */
+  transform: scale(1.03);
   box-shadow: 0 6px 14px rgba(0, 0, 0, 0.15);
 }
 
 .notice-box {
-  background: #fff8f0; /* same background */
-  border-left: 6px solid orange; /* orange bar */
+  background: #fff8f0;
+  border-left: 6px solid orange;
 }
 .notice-box a {
   color: #3d77cd;
@@ -284,5 +281,204 @@ footer .footer-links a:hover {
   }
   .footer-links a {
     font-size: 13px !important;
+  }
+}
+
+/* Hero section button responsiveness */
+.hero-btn {
+  width: 18% !important;
+  margin: 0 auto;
+  display: block;
+}
+
+/* Tablet */
+@media (max-width: 992px) {
+  .hero-btn {
+    width: 35% !important;
+  }
+}
+
+/* Mobile */
+@media (max-width: 576px) {
+  .hero-btn {
+    width: 70% !important;
+    font-size: 1rem;
+  }
+}
+
+/* Hero image responsiveness */
+.hero-img {
+  width: 65%;
+  height: auto;
+}
+
+/* Tablet */
+@media (max-width: 992px) {
+  .hero-img {
+    width: 80%;
+  }
+}
+
+/* Mobile */
+@media (max-width: 576px) {
+  .hero-img {
+    width: 100%;
+  }
+}
+
+/* Awards section */
+.awards-section h1 {
+  color: #333;
+  font-size: 2rem;
+  font-weight: 600;
+}
+
+.awards-text {
+  color: #555;
+  line-height: 1.6;
+}
+
+.awards-list {
+  color: #555;
+  padding-left: 1.2rem;
+}
+
+.awards-img,
+.awards-press-img {
+  max-width: 100%;
+  height: auto;
+}
+
+/* Tablet */
+@media (max-width: 992px) {
+  .awards-section h1 {
+    font-size: 1.6rem;
+  }
+  .awards-text {
+    font-size: 0.95rem;
+  }
+}
+
+/* Mobile */
+@media (max-width: 768px) {
+  .awards-section {
+    text-align: center;
+  }
+  .awards-section h1 {
+    font-size: 1.4rem;
+  }
+  .awards-text {
+    font-size: 0.9rem;
+  }
+  .awards-list {
+    list-style: none;
+    padding: 0;
+  }
+  .awards-list li {
+    margin-bottom: 6px;
+  }
+  .awards-press-img {
+    max-width: 80%;
+    margin-top: 1rem;
+  }
+}
+
+/* Education section responsiveness */
+.education-img {
+  width: 70%;
+  height: auto;
+}
+
+@media (max-width: 992px) {
+  .education-img {
+    width: 80%; /* slightly larger on tablets */
+  }
+}
+
+@media (max-width: 768px) {
+  .education-img {
+    width: 90%; /* nearly full width on small screens */
+  }
+
+  .education-section h1 {
+    font-size: 1.4rem; /* smaller heading on mobile */
+    text-align: center;
+  }
+
+  .education-section p,
+  .education-section a {
+    text-align: center;
+    font-size: 0.95rem;
+  }
+
+  .education-section .custom-links {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+}
+
+/* Pricing component responsiveness */
+/* Pricing Boxes */
+.pricing-box h1 {
+  font-size: 1.8rem;
+  color: #454444;
+  margin-bottom: 1rem;
+}
+
+.pricing-box p {
+  color: #7b7777;
+  line-height: 1.6;
+  font-weight: 500;
+  font-size: 1rem;
+}
+
+/* Tablet */
+@media (max-width: 992px) {
+  .pricing-box h1 {
+    font-size: 1.5rem;
+  }
+  .pricing-box p {
+    font-size: 0.95rem;
+  }
+}
+
+/* Mobile */
+@media (max-width: 768px) {
+  .pricing-box {
+    margin-bottom: 1rem;
+  }
+  .pricing-box h1 {
+    font-size: 1.2rem;
+  }
+  .pricing-box p {
+    font-size: 0.85rem;
+  }
+}
+
+
+/* Stats */
+/* Stats section links */
+.stats-link {
+  color: #3d77cd;
+  text-decoration: none;
+  font-weight: 500;
+  transition: color 0.3s ease;
+}
+
+.stats-link:hover {
+  color: #353434;
+}
+
+.stats-img {
+  width: 100%;       /* full width for mobile */
+  max-width: 500px;  /* limit max size on desktop */
+  height: auto;
+}
+
+@media (max-width: 768px) {
+  .stats-img {
+    max-width: 90%;  /* slightly smaller on small devices */
+    margin: 0 auto;
   }
 }
