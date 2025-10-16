@@ -4,7 +4,7 @@ function Footer() {
   return (
     <footer style={{ backgroundColor: "rgb(250, 250, 250)" }}>
       <div className="container-fluid border-top mt-5">
-        <div className="container" style={{ paddingLeft: "90px", paddingRight: "90px" }}>
+        <div className="container px-3 px-md-5">
           <div className="row mt-5">
             <div className="col">
               <img src="media/images/logo.svg" style={{ width: "70%" }} />
@@ -24,7 +24,7 @@ function Footer() {
                 <i className="fa-brands fa-telegram"></i>
               </div>
             </div>
-            <div className="col footer-links text-muted">
+            <div className="ol-12 col-md-6 col-lg-2 footer-links text-muted">
               <p style={{fontWeight: 500,fontSize: "20px"}}>Account</p>
               <a href="">Open demat account</a>
               <br />
@@ -165,8 +165,8 @@ function Footer() {
            
         </div>
       </div>
-      <div className="container" style={{ paddingLeft: "150px", paddingRight: "120px", fontSize:"13px"}}>
- <ul className="d-flex flex-wrap list-unstyled gap-3">
+      <div className="container container px-3 px-md-5" style={{fontSize:"13px"}}>
+ <ul className="d-flex flex-wrap list-unstyled gap-3 justify-content-center justify-content-md-start">
               <li className="">
                 <a className="down-links">NSE</a>
               </li>
