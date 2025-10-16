@@ -53,8 +53,7 @@ function PricingPage() {
       />
       <p className="text-center mt-5 mb-5 fs-5 custom-links">
         Want to know more about our technology stack? Check out the{" "}
-        <a href="">Zerodha.tech </a>
-        blog.
+        <a href="">Zerodha.tech</a>blog.
       </p>
       <Universe />
     </>

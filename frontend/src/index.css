@@ -112,78 +112,6 @@ footer .footer-links a:hover {
   margin-left: -90px;
 }
 
-/* Product */
-.hero-title {
-  color: #454444;
-  font-size: 30px;
-}
-
-.hero-subtitle {
-  color: #454444;
-  font-weight: 400;
-  font-size: 22px;
-}
-
-.custom-container {
-  padding-left: 100px;
-  padding-right: 100px;
-}
-
-.zoom-hover {
-  transition: transform 0.4s ease;
-  cursor: pointer;
-}
-
-.zoom-hover:hover {
-  transform: scale(1.05);
-}
-
-.product-title {
-  font-size: 1.75rem;
-  font-weight: 600;
-  color: #454444;
-}
-
-.universe-title {
-  color: #454444;
-  font-size: 25px;
-}
-
-.store-badge {
-  transition: all 0.3s ease;
-}
-
-.store-badge:hover {
-  filter: brightness(1.2) opacity(0.85);
-}
-
-.universe-intro {
-  font-size: 1rem !important;
-  line-height: 1.5 !important;
-  max-width: 800px;
-  margin: 0 auto 2rem auto;
-  color:#696767 !important;
-}
-
-/* All paragraphs inside Universe */
-.universe-container p {
-  font-weight: 500;
-  color: #9ca3a9;
-  font-size: 0.8rem;
-  line-height: 1.6;
-  margin-top: 0.5rem; 
-  margin-bottom: 0;
-}
-
-/* Target all images inside Universe */
-.universe-container img {
-  transition: all 0.3s ease;
-  cursor: pointer;
-}
-
-.universe-container img:hover {
-  filter: brightness(1.2) opacity(0.85);
-}
 
 /* Pricing */
 .pricing-title {
@@ -590,5 +518,233 @@ footer .footer-links a:hover {
   .open-account-btn {
     width: 70% !important;
     font-size: 1rem;
+  }
+}
+
+
+/* Sections Container (Left & Right) */
+.section-container {
+  max-width: 1140px;
+  margin: 0 auto;
+  line-height: 2;
+  font-size: 1.05em;
+  padding: 3rem 1rem;
+}
+
+/* Product Title */
+.product-title {
+  font-size: 2rem;
+  font-weight: 600;
+  color: #454444;
+}
+
+/* Custom Links */
+.custom-links a {
+  color: #3d77cd;
+  text-decoration: none;
+  font-weight: 500;
+  margin-right: 30px;
+  display: inline-block;
+  transition: color 0.3s ease;
+}
+
+.custom-links a:hover {
+  color: #353434;
+}
+
+/* Store badges */
+.store-badge {
+  transition: all 0.3s ease, filter 0.3s ease;
+  max-width: 140px;
+  height: auto;
+  display: inline-block;
+  margin-right: 25px;
+  cursor: pointer;
+}
+
+.store-badge:hover {
+  filter: brightness(2);
+  box-shadow: 0 0 8px rgba(255, 255, 255, 0.6);
+}
+
+/* Zoom effect for images */
+.zoom-hover {
+  transition: transform 0.4s ease;
+  cursor: pointer;
+}
+
+.zoom-hover:hover {
+  transform: scale(1.05);
+}
+
+/* Responsive adjustments */
+
+/* Tablet: <= 992px */
+@media (max-width: 992px) {
+  .section-container .row {
+    flex-direction: column; /* stack vertically */
+    text-align: center;
+  }
+
+  .section-container .col-6 {
+    padding: 1rem 0 !important;
+  }
+
+  .custom-links a {
+    margin: 0 15px 10px 0;
+  }
+
+  .store-badge {
+    max-width: 120px;
+    margin: 10px 10px 0 0;
+  }
+
+  /* If RightSection, stack text first then image */
+  .right-section-container .row {
+    flex-direction: column-reverse;
+  }
+
+  .zoom-hover {
+    max-width: 80%;
+    margin: 0 auto;
+  }
+}
+
+/* Mobile: <= 576px */
+@media (max-width: 576px) {
+  .product-title {
+    font-size: 1.5rem;
+  }
+
+  .section-container {
+    padding: 2rem 1rem;
+  }
+
+  .custom-links a {
+    display: block;
+    margin: 5px 0;
+  }
+
+  .store-badge {
+    max-width: 100px;
+    margin: 5px 5px 0 0;
+  }
+
+  .zoom-hover {
+    max-width: 100%;
+  }
+}
+
+/* Universe Section */
+.universe-title {
+  color: #454444;
+  font-size: 25px;
+}
+
+.universe-intro {
+  font-size: 1rem !important;
+  line-height: 1.5 !important;
+  max-width: 800px;
+  margin: 0 auto 2rem auto;
+  color: #696767 !important;
+}
+
+/* All paragraphs inside Universe */
+.universe-container p {
+  font-weight: 500;
+  color: #9ca3a9;
+  font-size: 0.8rem;
+  line-height: 1.6;
+  margin-top: 0.5rem; 
+  margin-bottom: 0;
+}
+
+/* Target all images inside Universe */
+.universe-container img {
+  transition: all 0.3s ease;
+  cursor: pointer;
+  max-height: 60px; /* default desktop */
+  display: block;
+  margin: 0 auto 1rem auto;
+}
+
+.universe-container img:hover {
+  filter: brightness(1.2) opacity(0.85);
+}
+
+/* Container rows */
+.universe-container .row {
+  margin: 0 auto;
+}
+
+.universe-btn {
+ padding: 0.75rem 1.25rem;
+  font-size: 1.2rem;
+  display: block;
+  margin: 0 auto;
+  border-radius: 4px;
+  width: 250px !important;   /* fixed width for desktop */
+  max-width: 80% !important; /* prevent overflow on smaller screens */
+}
+
+/* Mobile Responsiveness: <=576px */
+@media (max-width: 576px) {
+  .universe-title {
+    font-size: 20px;
+    text-align: center;
+  }
+
+  .universe-intro {
+    font-size: 0.95rem !important;
+    line-height: 1.4 !important;
+    text-align: center;
+  }
+
+  .universe-container p {
+    font-size: 0.75rem;
+    text-align: center;
+  }
+
+  .universe-container .row > .col-4 {
+    width: 100%;
+    max-width: 100%;
+    padding: 1rem 0;
+  }
+
+  /* Make images bigger on mobile */
+  .universe-container img {
+    max-height: 100px; /* increase size */
+    width: auto;
+  }
+
+  /* Button full width */
+  .universe-container button {
+    width: 70%;
+    margin: 1rem auto 2rem auto;
+    font-size: 1rem;
+    display: block;
+  }
+   .universe-btn {
+    width: 70%;
+    font-size: 1rem;
+    margin: 1rem auto 2rem auto;
+  }
+}
+
+/* Tablet responsiveness: <=992px */
+@media (max-width: 992px) {
+  .universe-title {
+    font-size: 22px;
+  }
+  .universe-intro {
+    font-size: 0.95rem !important;
+  }
+  .universe-container p {
+    font-size: 0.78rem;
+  }
+
+   .universe-btn {
+    width: 35%;
+    font-size: 0.95rem;
   }
 }
