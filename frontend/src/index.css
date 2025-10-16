@@ -112,40 +112,6 @@ footer .footer-links a:hover {
   margin-left: -90px;
 }
 
-
-/* Pricing */
-.pricing-title {
-  color: #454444;
-  font-size: 30px;
-}
-
-.pricing-subtitle {
-  color: #9ca3a9; 
-  font-weight: 400;
-  font-size: 22px;
-}
-
-.pricing-img {
-  max-height: 190px;
-  width: auto;
-  display: block;
-  margin: 0 auto;
-  margin-bottom: 1rem;
-}
-
-.price-container h1 {
-  color: #454444;
-  font-size: 1.8rem;   /* same as fs-3 */
-  margin-bottom: 1.5rem;
-}
-
-.price-container p {
-  color:#7b7777;
-  line-height: 1.7;
-  font-size: 1.05rem;
-  font-weight: 500;
-}
-
 /* support */
 .support-container {
   padding-left: 4px !important;
@@ -746,5 +712,153 @@ footer .footer-links a:hover {
    .universe-btn {
     width: 35%;
     font-size: 0.95rem;
+  }
+}
+
+/* Pricing Section */
+.pricing-title {
+  color: #454444;
+  font-size: 30px;
+  text-align: center;
+}
+
+.pricing-subtitle {
+  color: #9ca3a9; 
+  font-weight: 400;
+  font-size: 22px;
+  text-align: center;
+  margin-bottom: 2rem;
+}
+
+.pricing-img {
+  max-height: 190px;
+  width: auto;
+  display: block;
+  margin: 0 auto 1rem auto;
+  transition: transform 0.3s ease;
+}
+
+.pricing-img:hover {
+  transform: scale(1.05);
+}
+
+.price-container h1 {
+  color: #454444;
+  font-size: 1.8rem;   /* same as fs-3 */
+  margin-bottom: 1.5rem;
+}
+
+.price-container p {
+  color:#7b7777;
+  line-height: 1.7;
+  font-size: 1.05rem;
+  font-weight: 500;
+}
+
+/* Brokerage Section */
+.brokerage-section {
+  max-width: 1140px;
+  margin: 0 auto;
+  padding: 2rem 1rem;
+}
+
+.brokerage-section h3 {
+  font-weight: 500;
+  color: #454444;
+  margin-bottom: 1rem;
+}
+
+.brokerage-section ul {
+  list-style: disc;
+  padding-left: 1.2rem;
+  color: #7b7777;
+  line-height: 1.8;
+  font-size: 1rem;
+}
+
+
+/* Tablet responsiveness <= 992px */
+@media (max-width: 992px) {
+  .price-container .col-4 {
+    width: 50%;           /* 2 per row on tablet */
+    max-width: 50%;
+    padding: 1rem;
+  }
+
+  .pricing-img {
+    max-height: 160px;
+  }
+
+  .price-container h1 {
+    font-size: 1.5rem;
+  }
+
+  .price-container p {
+    font-size: 0.95rem;
+  }
+
+  .brokerage-section .row {
+    flex-wrap: wrap;
+    text-align: center;
+  }
+
+  .brokerage-section .col-8,
+  .brokerage-section .col-4 {
+    width: 100%;
+    max-width: 100%;
+    padding: 1rem 0;
+  }
+
+  .brokerage-section ul {
+    text-align: left;
+    padding-left: 1rem;
+    font-size: 0.95rem;
+  }
+}
+
+/* Mobile responsiveness <= 576px */
+@media (max-width: 576px) {
+  .price-container .col-4 {
+    width: 100%;           /* stack vertically */
+    max-width: 100%;
+    padding: 1rem 0;
+  }
+
+  .pricing-img {
+    max-height: 140px;
+  }
+
+  .price-container h1 {
+    font-size: 1.3rem;
+  }
+
+  .price-container p {
+    font-size: 0.9rem;
+  }
+
+  .pricing-title {
+    font-size: 24px;
+  }
+
+  .pricing-subtitle {
+    font-size: 18px;
+  }
+
+   .brokerage-section h3 {
+    font-size: 1.1rem;
+  }
+
+  .brokerage-section ul {
+    font-size: 0.9rem;
+    line-height: 1.6;
+  }
+
+  .brokerage-section .row {
+    margin: 0;
+  }
+
+  .brokerage-section .col-8,
+  .brokerage-section .col-4 {
+    padding: 0.5rem 0;
   }
 }
