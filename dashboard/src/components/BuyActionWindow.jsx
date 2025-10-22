@@ -1,33 +1,32 @@
-import React, { useState } from "react";
+import React, { useState, useContext } from "react";
 import { Link } from "react-router-dom";
-
 import axios from "axios";
-
 import GeneralContext from "./GeneralContext";
-
 import "./BuyActionWindow.css";
 
 const BuyActionWindow = ({ uid }) => {
   const [stockQuantity, setStockQuantity] = useState(1);
   const [stockPrice, setStockPrice] = useState(0.0);
 
-  const handleBuyClick = () => {
-    axios.post("http://localhost:3002/newOrder", {
+  const { closeBuyWindow } = useContext(GeneralContext); //use the actual context
+
+  const handleBuyClick = async () => {
+    await axios.post("http://localhost:3002/newOrder", {
       name: uid,
       qty: stockQuantity,
       price: stockPrice,
       mode: "BUY",
     });
 
-    GeneralContext.closeBuyWindow();
+    closeBuyWindow(); //correctly closes modal
   };
 
   const handleCancelClick = () => {
-    GeneralContext.closeBuyWindow();
+    closeBuyWindow(); // same here
   };
 
   return (
-    <div className="container" id="buy-window" draggable="true">
+    <div className="container buy-window" id="buy-window" draggable="true">
       <div className="regular-order">
         <div className="inputs">
           <fieldset>
