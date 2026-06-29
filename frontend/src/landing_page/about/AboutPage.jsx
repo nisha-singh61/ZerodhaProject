@@ -10,6 +10,6 @@ function AboutPage() {
         <Team />
         </>
      );
-}      
+}
 
 export default AboutPage;
